@@ -16,7 +16,7 @@ public class HelloController {
     @Secured(SecurityRule.IS_AUTHENTICATED)
     @Produces(MediaType.TEXT_PLAIN)
     public String hello(Principal principal) {
-        return "Hello, " + principal.getName() + "!";
+        return "Hello from Micronaut, " + principal.getName() + "!";
     }
 
 }
